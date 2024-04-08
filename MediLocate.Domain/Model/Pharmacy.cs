@@ -21,7 +21,9 @@ namespace MediLocate.Domain.Model
         public TimeSpan ClosingHours { get; set; }
         public List<DayOfWeek> OpeningDays { get; set; }
         public List<Medicine> Medicines { get; set; }
+        public ICollection<Prescription> Prescriptions { get; set; }
         public ICollection<PharmacyMedicine> pharmacyMedicines { get; set; }
+
 
     }
 }

@@ -17,6 +17,9 @@ namespace MediLocate.Dal
         public DbSet<Pharmacy> Pharmacies { get; set; }
         public DbSet<Medicine> Medicines { get; set; }
         public DbSet<PharmacyMedicine> PharmacyMedicines { get; set; }
+        public DbSet<Prescription> Prescriptions { get; set; }
+        public DbSet<User> Users { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
